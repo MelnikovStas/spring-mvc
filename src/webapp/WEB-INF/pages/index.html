@@ -5,11 +5,38 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
+<div>
+    <a th:href="@{/mypage}">
+        <button>MY page</button>
+    </a>
+</div>
 <body>
 <div>
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>
     </th:block>
+
+    <a th:href="@{/cars}">
+        <button>Show Cars</button>
+    </a>
+
+    <a th:href="@{/cars(count=1)}">
+        <button>Show 1 Cars</button>
+    </a>
+
+    <a th:href="@{/cars(count=2)}">
+        <button>Show 2 Cars</button>
+    </a>
+
+    <a th:href="@{/cars(count=3)}">
+        <button>Show 3 Cars</button>
+    </a>
+
+    <a th:href="@{/cars(count=4)}">
+        <button>Show 4 Cars</button>
+    </a>
+
+
 </div>
 </body>
 </html>
