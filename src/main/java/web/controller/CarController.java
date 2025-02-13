@@ -27,6 +27,6 @@ public class CarController {
             model.addAttribute("cars", cars.subList(0, count));
         }
 
-        return "cars"; // имя представления (view)
+        return "cars";
     }
 }
